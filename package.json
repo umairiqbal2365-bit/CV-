@@ -1,0 +1,13 @@
+{
+  "name": "cv-online",
+  "version": "1.0.0",
+  "description": "CV/Portfolio website with Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server dist -p 8080 -o",
+    "build": "echo \"Build complete\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

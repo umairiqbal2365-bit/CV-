@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Resume</title>
+</head>
+
+<body class="font-['JetBrains_Mono'] sans-serif bg-[#1C1C22]">
+    <header class=" container w-full  text-white shadow">
+        <div class=" mx-auto flex justify-between items-center max-w-[1200px] p-4">
+            <!-- Logo -->
+            <div class=" flex justify-center items-center">
+                <h1 class=" flex justify-center items-center text-5xl font-bold"> <b>Uma</b> <b
+                        class="text-[#00E187]">ir::
+                    </b> </h1>
+            </div>
+
+
+            <nav class="hidden md:flex">
+                <ul class="flex gap-8 items-center">
+                    <li><a href="index.html" class="hover:text-[#00E187] hover:underline">
+                            Home</a></li>
+                    <li><a href="services.html" class="hover:text-[#00E187] hover:underline">
+                            Services</a></li>
+                    <li><a href="resume.html" class="hover:text-[#00E187] hover:underline">
+                            Resume</a></li>
+                    <li><a href="#work" class="hover:text-[#00E187] hover:underline"> Work</a></li>
+                    <li><a href="contant.html" class="hover:text-[#00E187] hover:underline">
+                            Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="https://wa.me/923706300351" target="_blank" rel="noopener noreferrer">
+                    <button class="py-2 px-5 bg-[#00E187] rounded-full text-black hover:bg-[#00c677]">
+                        Hire Me
+                    </button>
+                </a>
+            </div>
+
+
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 ">
+                <span class="w-6 h-0.5 bg-white"></span>
+                <span class="w-6 h-0.5 bg-white"></span>
+                <span class="w-6 h-0.5 bg-white"></span>
+            </button>
+        </div>
+
+
+        <div id="mobile-menu"
+            class="hidden md:hidden flex-col bg-[#1C1C22] shadow-lg p-6 absolute w-full top-[70px] left-0">
+            <ul class="flex flex-col gap-4 text-center">
+                <li><a href="index.html" class="hover:text-[#00E187]">Home</a></li>
+                <li><a href="services.html" class="hover:text-[#00E187]">Services</a></li>
+                <li><a href="resume.html" class="hover:text-[#00E187]">Resume</a></li>
+                <li><a href="#work" class="hover:text-[#00E187]">Work</a></li>
+                <li><a href="contant.html" class="hover:text-[#00E187]">Contact</a></li>
+                <li>
+                    <button class="py-2 px-5 bg-[#00E187] rounded-lg text-black hover:bg-[#00c677] transition">
+                        Hire Me
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <section class=" container w-full  text-white shadow">
+        <div class=" mx-auto flex justify-between  max-w-[1200px] p-4 gap-8">
+            <div class="flex flex-col w-[30%]  p-4 gap-5">
+                <button
+                    class="py-2 w-full px-5 bg-[#27272C] rounded-lg text-white hover:bg-[#00E187] hover:text-[#27272C] transition">
+                    <a href="#experience">Experiece</a>
+                </button>
+                <button
+                    class="py-2 px-5 w-full bg-[#27272C] rounded-lg text-white hover:bg-[#00E187] hover:text-[#27272C] transition"><a
+                        href="#education">Education</a></button>
+                <button
+                    class="py-2 px-5 w-full bg-[#27272C] rounded-lg text-white hover:bg-[#00E187] hover:text-[#27272C] transition"><a
+                        href="#skills">Skills</a></button>
+                <Button
+                    class="py-2 px-5 w-full bg-[#27272C] rounded-lg text-white hover:bg-[#00E187] hover:text-[#27272C] transition">
+                    <a href="#about">About</a></Button>
+            </div>
+            <div class="flex flex-col w-[70%] gap-7">
+                <div id="experience" class="flex flex-col gap-6">
+                    <h1 class="text-3xl">My Experience</h1>
+                    <p class="text-xl text-[#A4A4A7] leading-relaxed">
+                        With over 1 years in WordPress, HTML, CSS,Tailwind Css,
+                        JavaScript, Next.js, React and basic Python concepts. Skilled in creating
+                        robust, user-centric solutions that elevate digital platforms and drive
+                        business growth.
+                    </p>
+                    <div class="grid xl:grid-cols-2 xl:grid-rows-2 grid-cols-1 grid-rows-4 gap-6">
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">WordPress Developer</h1>
+                            <p class="text-[#A4A4A7]">Pixelizio</p>
+                        </div>
+
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">Frontend Developer</h1>
+                            <p class="text-[#A4A4A7]">Build the Websites</p>
+                        </div>
+
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">React Developer</h1>
+                            <p class="text-[#A4A4A7]">Personal Projects</p>
+                        </div>
+
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">Next.js Developer</h1>
+                            <p class="text-[#A4A4A7]">Open Source</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="education" class="flex flex-col gap-6">
+                    <h1 class="text-3xl">My Education</h1>
+                    <p class="text-xl text-[#A4A4A7] ">
+                        I have completed my intermediate education and Bachelor's degree in Computer Science from
+                        GC University,Faisalabad. Additionally, I have completed a three month intership after Bscs in
+                        Pixelizio software house Islamabad.
+                    </p>
+                    <div class="grid xl:grid-cols-2 xl:grid-rows-2 grid-cols-1 grid-rows-4 gap-6">
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">intermediate</h1>
+                            <p class="text-[#A4A4A7]">Postgraduate College</p>
+                        </div>
+
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">Bachelor's degree</h1>
+                            <p class="text-[#A4A4A7]">Gc University</p>
+                        </div>
+
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">Frontend Developer</h1>
+                            <p class="text-[#A4A4A7]">Build the Websites</p>
+                        </div>
+
+                        <div class="rounded-2xl shadow p-6 bg-[#111] flex flex-col gap-7">
+                            <h1 class="text-2xl font-semibold hover:text-[#00E187]">WordPress Developer</h1>
+                            <p class="text-[#A4A4A7]">Pixelizio</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills" class="flex flex-col gap-6">
+                    <h1 class="text-3xl">My Skills</h1>
+                    <p class="text-xl text-[#A4A4A7] ">
+                        I am a skilled frontend developer proficient in HTML, CSS,Tailwind Css, JavaScript, Next.js, and
+                        React. Additionally, I have basic concept of Python.
+                    </p>
+                    <div class="grid grid-cols-3 gap-10  p-6 text-white text-center">
+                        <div class="bg-black p-4 hover:text-[#00E187] ">
+                            <i class="fa-brands fa-html5 text-5xl  "></i>
+                            <p>HTML 5</p>
+                        </div>
+                        <div class="bg-black p-4 hover:text-[#00E187] ">
+                            <i class="fa-brands fa-css3 text-5xl  "></i>
+                            <p>CSS3/TAILWIND CSS</p>
+                        </div>
+                        <div class="bg-black p-4 hover:text-[#00E187] ">
+                            <i class="fa-brands fa-js text-5xl   "></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="bg-black p-4 hover:text-[#00E187] ">
+                            <i class="fa-brands fa-node-js text-5xl"> </i>
+                            <p>Next-js</p>
+                        </div>
+                        <div class="bg-black p-4 hover:text-[#00E187] ">
+                            <i class="fa-brands fa-react text-5xl"></i>
+                            <p>React-js</p>
+                        </div>
+                        <div class="bg-black p-4 hover:text-[#00E187] ">
+                            <i class="fa-brands fa-python text-5xl"></i>
+                            <p> python</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="about" class="flex flex-col gap-6">
+                    <h1 class="text-3xl">About me</h1>
+                    <p class="text-xl text-[#A4A4A7] ">
+                        I am based in Islamabad, specializing in Frontend development.Experienced in HTML, CSS,
+                        JavaScript, Next.js, and React,basic knowledge about Python dedicated to crafting seamless
+                        digital experiences and optimizing online presence.
+                    </p>
+                </div>
+                <div>
+                    <ul class="grid grid-cols-2 gap-10">
+                        <!-- Row 1 -->
+                        <li class="flex flex-row justify-between">
+                            <span class=" border-b border-[#00E187] p-2">Name</span>
+                            <span>Muhammad Umair Iqbal</span>
+                        </li>
+
+                        <li class="flex flex-row justify-between ">
+                            <span class="border-b border-[#00E187] p-2">Father Name</span>
+                            <span>Muhammad Iqbal</span>
+                        </li>
+
+                        <!-- Row 2 -->
+                        <li class="flex flex-row justify-between ">
+                            <span class="border-b border-[#00E187] p-2">Phone</span>
+                            <span>+923706300351</span>
+                        </li>
+
+                        <li class="flex flex-row justify-between ">
+                            <span class="border-b border-[#00E187] p-2">Email</span>
+                            <span>umairiqbal2365@gmail.com</span>
+                        </li>
+
+                        <!-- Row 3 -->
+                        <li class="flex flex-row justify-between ">
+                            <span class="border-b border-[#00E187] p-2">Experience</span>
+                            <span>1 Year</span>
+                        </li>
+
+                        <li class="flex flex-row justify-between ">
+                            <span class="border-b border-[#00E187] p-2">Nationality</span>
+                            <span>Pakistani</span>
+                        </li>
+
+                        <!-- Row 4 -->
+                        <li class="flex flex-row justify-between">
+                            <span class="border-b border-[#00E187] p-2">Availability</span>
+                            <span>Available</span>
+                        </li>
+
+                        <li class="flex flex-row justify-between">
+                            <span class="border-b border-[#00E187] p-2">Language</span>
+                            <span>Punjabi, Urdu, English</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+    </section>
+
+
+</body>
