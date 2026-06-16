@@ -1,10 +1,9 @@
 @tailwind base;
+@tailwind components;
 @tailwind utilities;
-@tailwind utilities;
-@import "tailwindcss";
 
 .text-outline {
-    -webkit-text-stroke: 1px #ffffff
+    -webkit-text-stroke: 1px #ffffff;
 }
 
 .text-outline-hover {

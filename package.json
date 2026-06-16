@@ -1,11 +1,23 @@
 {
   "name": "cv-online",
   "version": "1.0.0",
-  "description": "CV/Portfolio website with Tailwind CSS",
-  "main": "index.js",
+  "description": "CV/Portfolio website with React and Tailwind CSS",
+  "type": "module",
   "scripts": {
-    "dev": "npx http-server dist -p 8080 -o",
-    "build": "echo \"Build complete\""
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.2.0",
+    "tailwindcss": "^3.4.3",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.19"
   },
   "keywords": [],
   "author": "",
